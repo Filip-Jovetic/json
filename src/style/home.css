@@ -1,0 +1,255 @@
+.PromoPoster {
+    width: 100%;
+    cursor: pointer;
+}
+.PromoYoutube {
+    width: 100%;
+    
+}
+
+
+
+
+.TrailerContainer {
+    width: 100%;
+
+}
+.PromoGrid {
+    display: block;
+    text-align: center;
+    margin-left: 19px;
+}
+
+.nesto {
+    color: rgb(39, 23, 23);
+    border: 2px solid green;
+    margin:20px 0;
+    width: 90vw;
+    transition: all 0.4s ease-in-out;
+    background-color: rgb(247, 240, 240);
+    border-radius: 15px;
+    
+  
+}
+.nesto:hover {
+    background-color: rgb(53, 49, 49, 0.8);
+    color: rgb(247, 240, 240);
+    transform: scale(1.04);
+    
+}
+.PromoBtn {
+    background-color: black;
+    color: rgb(247, 240, 240);
+    padding: 15px 20px;
+    margin: 20px 50px;
+    cursor: pointer;
+}
+
+
+body {
+    background-image: url("black.jpg");
+    background-repeat: repeat;
+    margin: 0; padding: 0;
+}
+
+.AjaxApp {
+    width: 100%;
+margin-left: 5vw;
+    margin: 0 auto;
+   } 
+
+
+
+
+
+
+   .AnimeDetails {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    position: relative;
+    padding: 50px 100px;
+    background-color: rgb(247, 240, 240,0.7);
+    
+}
+
+.AnimeDetails h1 {
+    margin: 0.25rem 0 0.5rem 0;
+}
+
+.AnimeDetails h2 {
+    margin: 0 0 0.75rem 0;
+}
+
+.CloseDetails {
+    padding: 30px;
+    border: none;
+    background: none;
+    outline: none;
+    color: darkred;
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.NavbarLine {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem;
+    text-align: right;
+}
+/***Header***/
+header {
+    width: 100%;
+    height: 20vh;
+    background-color: transparent;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+    display: block;
+    color: aliceblue;
+    font-size: larger;
+    padding-bottom: 1.5rem;
+}
+.logo {
+    color: #ea1538;
+    
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #ea1538;
+    transition: 0.3s;
+}
+.dugme {
+    border: none;
+    background-color: #ea1538;
+    border-radius: 30px;
+    padding: 12px 30px;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    transition: 0.4s;
+}
+.dugme:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+/***End of header Header***/
+@media (min-width: 768px) {
+    .PromoGrid {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .nesto {
+        width: 40vw;
+        
+    }
+}
+
+@media (min-width: 960px) {
+    .PromoGrid {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .nesto {
+        width: 28vw;
+        
+    }
+}
+@media (min-width: 1200px) {
+    .PromoGrid {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .nesto {
+        width: 22vw;
+        
+    }
+}
+
+
+
+
+.pozadina {
+
+    width: 100vw;
+    height: 100vh;
+}
+#main-container {
+   
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+   
+}
+
+/** loader **/
+#first-half {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 50px 0 0;
+    border-color: #354952 transparent transparent transparent;
+    margin: 0 auto;
+    animation: anticlockwise 1s ease-in-out infinite normal;
+}
+
+#second-half {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 50px 50px;
+    border-color: transparent transparent #ECC93E transparent;
+    margin: -50px auto 0;
+    animation: clockwise 1s ease-in-out infinite alternate;
+}
+
+/** animation**/
+@keyframes anticlockwise {
+    0% {
+        transform: rotate(-360deg);
+    }
+
+    100% {}
+}
+
+@keyframes clockwise {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {}
+}
+
+#loading-text {
+    color: #fff;
+    font-family: sans-serif;
+    margin: 30px auto;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 6px;
+}

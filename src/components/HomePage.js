@@ -7,6 +7,7 @@ export default class Promo extends React.Component {
             frame: false
         }
         this.showFrame = this.showFrame.bind(this)
+        this.showAnime = this.showAnime.bind(this)
     }
 
     showFrame() {this.setState({frame: true})}

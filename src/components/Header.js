@@ -6,7 +6,7 @@ export default class Header extends React.Component {
         return(
            <header className="Hero">
                 <nav>
-                    <div><h2>Anime <span className="logo">Wiki</span></h2></div>
+                    <div className="logoAll"><h2>Anime <span className="logo">Wiki</span></h2></div>
 
                     <ul>
                         <li><a href="#">Home</a></li>

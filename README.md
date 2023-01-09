@@ -1,3 +1,7 @@
+# Json-React
+
+In this project we are create simple SPA. the application should take the data from the jason file and read it. The app was created to be a mini wiki for random anime titles.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

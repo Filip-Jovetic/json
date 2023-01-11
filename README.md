@@ -1,6 +1,6 @@
 # Json-React
 
-In this project we are create simple SPA. the application should take the data from the jason file and read it. The app was created to be a mini wiki for random anime titles.
+In this project we created a simple SPA. The following application should take the data and read from JSON file. The app is being created as a mini wikipedia for random anime titles.
 
 # Getting Started with Create React App
 

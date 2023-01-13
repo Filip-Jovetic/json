@@ -39,7 +39,7 @@ class App extends React.Component {
   }
 
   render(){
-      let core =<div class="pozadina"><div id="main-container">
+      let core =<div className="pozadina"><div id="main-container">
 <div id="first-half"></div>
 <div id="second-half"></div>
 <h4 id="loading-text">loading</h4>
